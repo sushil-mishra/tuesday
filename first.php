@@ -22,3 +22,25 @@ function array_search1($arr,$val)
 }
 array_search1($array,4);
 ?>
+
+<?php
+echo"<br/><br/>";echo "Find how many times values of array repeating";echo"<br/>";
+$array = array('0','2','1','2','0','3');
+$counter = count($array);
+
+$element_array = array();
+
+for($i=0; $i<$counter; $i++)
+{
+    echo $key = $array[$i];
+   
+
+    if($element_array[$key]>=1)
+    {
+        $element_array[$key]++;
+    }else{
+        $element_array[$key]=1;
+    }
+}
+echo"<pre>";print_r($element_array);
+?>
